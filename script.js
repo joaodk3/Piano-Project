@@ -9,13 +9,14 @@ keys.forEach(function(key){
 
 const keyPlay = function (event) {
   event.target.style.backgroundColor = '#6df0c2';
+  
 }
 
 const keyReturn = function (event) {
   event.target.style.backgroundColor = '';
 }
 
-// A named function with event handler properties
+// A named function with event handler properties for the backgroud color changes action
 
 const eventHandlerFunction = function (note) {
 note.onmousedown = function (note) {
@@ -98,7 +99,7 @@ nextThree.onclick = function () {
 
 }
 
-// This is the event handler property and function for the startOver button
+// Event handler property and function for the startOver button
 startOver.onclick = function() {
   nextOne.hidden = false;
   startOver.hidden = true;
@@ -115,3 +116,91 @@ startOver.onclick = function() {
   document.getElementById('word-six').innerHTML = 'YOU!';
   document.getElementById('letter-note-six').innerHTML = 'B';
 }
+
+// Adding audio to each key - I still need to find a way to loop the audios in the corresponding events
+
+const cKey = document.getElementById('c-key');
+const playC = document.getElementById('c-key-audio'); 
+cKey.onclick = playCAudio;
+function playCAudio() {
+playC.play();
+}
+
+const cSharpKey = document.getElementById('c-sharp-key');
+const playCSharp = document.getElementById('c-sharp-key-audio'); 
+cSharpKey.onclick = playCsharpAudio;
+function playCsharpAudio() {
+playCSharp.play();
+}
+
+const dKey = document.getElementById('d-key');
+const playD = document.getElementById('d-key-audio'); 
+dKey.onclick = playDAudio;
+function playDAudio() {
+playD.play();
+}
+
+const dSharpKey = document.getElementById('d-sharp-key');
+const playDSharp = document.getElementById('d-sharp-key-audio'); 
+dSharpKey.onclick = playDSharpAudio;
+function playDSharpAudio() {
+playDSharp.play();
+}
+
+const eKey = document.getElementById('e-key');
+const playE = document.getElementById('e-key-audio'); 
+eKey.onclick = playEAudio;
+function playEAudio() {
+playE.play();
+}
+
+const fKey = document.getElementById('f-key');
+const playF = document.getElementById('f-key-audio'); 
+fKey.onclick = playFAudio;
+function playFAudio() {
+playF.play();
+}
+
+const fSharpKey = document.getElementById('f-sharp-key');
+const playFSharp = document.getElementById('f-sharp-key-audio'); 
+fSharpKey.onclick = playFSharpAudio;
+function playFSharpAudio() {
+playFSharp.play();
+}
+
+const gKey = document.getElementById('g-key');
+const playG = document.getElementById('g-key-audio'); 
+gKey.onclick = playGAudio;
+function playGAudio() {
+playG.play();
+}
+
+const gSharpKey = document.getElementById('g-sharp-key');
+const playGSharp = document.getElementById('g-sharp-key-audio'); 
+gSharpKey.onclick = playGSharpAudio;
+function playGSharpAudio() {
+playGSharp.play();
+}
+
+const aKey = document.getElementById('a-key');
+const playA = document.getElementById('a-key-audio'); 
+aKey.onclick = playAAudio;
+function playAAudio() {
+playA.play();
+}
+
+const aSharpKey = document.getElementById('a-sharp-key');
+const playASharp = document.getElementById('a-sharp-key-audio'); 
+aSharpKey.onclick = playASharpAudio;
+function playASharpAudio() {
+playASharp.play();
+}
+
+const highCKey = document.getElementById('high-c-key');
+const playHighC = document.getElementById('high-c-key-audio'); 
+highCKey.onclick = playHighCAudio;
+function playHighCAudio() {
+playHighC.play();
+}
+
+// Plays the intro song when the page loads

@@ -7,22 +7,27 @@
 </head>
 
 <body>
+    <audio id = "intro-song" preload="auto" autoplay> 
+        <source src = "Resources/songs/110_B_80sLoveKeys_01_728.mp3" type ="audio/mpeg" autoplay> </source>
+        <source src = "Resources/songs/110_B_80sLoveKeys_01_728.ogg" type ="audio/ogg" autoplay> </source>
+        <source src = "Resources/songs/110_B_80sLoveKeys_01_728.wav" type ="wav" autoplay> </source>
+    </audio>
   <p class='title'>Piano Player</p>
   <p id='demo'>Follow the song below to play  the piano.</p>
   <section class="piano">
     <section id='c-key' class="key">
       <section class='keynote'>C</section>
     </section>
-    <section id='c-sharp-key' class="black-key">
+    <section id='c-sharp-key' class="black-key" >
       <section class='black-keynote'>C#</section>
     </section>
-    <section id='d-key' class="key">
+    <section id='d-key' class="key" >
       <section class='keynote'>D</section>
     </section>
-    <section id='d-sharp-key' class="black-key">
+    <section id='d-sharp-key' class="black-key" >
       <section class='black-keynote'>D#</section>
     </section>
-    <section id='e-key' class="key">
+    <section id='e-key' class="key" >
       <section class='keynote'>E</section>
     </section>
     <section id='f-key' class="key">
@@ -31,13 +36,13 @@
     <section id='f-sharp-key' class="black-key">
       <section class='black-keynote'>F#</section>
     </section>
-    <section id='g-key' class="key">
+    <section id='g-key' class="key" data-note ="g-key">
       <section class='keynote'>G</section>
     </section>
     <section id='g-sharp-key' class="black-key">
       <section class='black-keynote'>G#</section>
     </section>
-    <section id='a-key' class="key">
+    <section id='a-key' class="key" data-note ="a-key">
       <section class='keynote'>A</section>
     </section>
     <section id='a-sharp-key' class="black-key">
@@ -50,6 +55,19 @@
       <div class='keynote'>C</div>
     </section>
   </section>
+
+  <audio id="c-key-audio" src="Resources/notes/C.mp3"></audio>
+  <audio id="c-sharp-key-audio" src="Resources/notes/Db.mp3"></audio>
+  <audio id="d-key-audio" src="Resources/notes/D.mp3"></audio>
+  <audio id="d-sharp-key-audio" src="Resources/notes/Eb.mp3"></audio>
+  <audio id="e-key-audio" src="Resources/notes/E.mp3"></audio>
+  <audio id="f-key-audio" src="Resources/notes/F.mp3"></audio>
+  <audio id="f-sharp-key-audio" src="Resources/notes/Gb.mp3"></audio>
+  <audio id="g-key-audio" src="Resources/notes/G.mp3"></audio>
+  <audio id="g-sharp-key-audio" src="Resources/notes/Ab.mp3"></audio>
+  <audio id="a-key-audio" src="Resources/notes/A.mp3"></audio>
+  <audio id="a-sharp-key-audio" src="Resources/notes/Bb.mp3"></audio>
+  <audio id="high-c-key-audio" src="Resources/notes/B.mp3"></audio>
 
   <section id='lyrics'>
     <section id='column-one'>
